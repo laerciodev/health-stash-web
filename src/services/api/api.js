@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:4000/";
+const baseUrl = "https://healthstash-api.onrender.com/";
 
 const getAuthToken = async () => {
   try {
