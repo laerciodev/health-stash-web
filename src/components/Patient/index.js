@@ -1,6 +1,6 @@
 // src/components/Patient.js
 import React from "react";
-import { Box, Text, Button, Flex, Divider } from "@chakra-ui/react";
+import { Box, Text, Button } from "@chakra-ui/react";
 
 const Patient = ({ patient, onScheduleAppointment }) => {
   const { id, name, age, diagnosis, lastAppointment } = patient;

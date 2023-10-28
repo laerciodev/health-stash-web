@@ -6,7 +6,6 @@ import {
   HStack,
   Heading,
   SimpleGrid,
-  VStack,
 } from "@chakra-ui/react";
 import PractitionerCard from "../../components/PractitionerCard";
 import { useEffect, useState } from "react";

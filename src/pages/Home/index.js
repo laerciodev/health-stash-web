@@ -10,27 +10,14 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import Patient from "../../components/Patient";
-import Appointments from "../../components/Appointments";
 import Header from "../../components/Header";
 import { AuthenticationContext } from "../../services/authentication/AuthenticationContext";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
-  const [patients, setPatients] = useState([]);
-  const [appointments, setAppointments] = useState([]);
-  const totalPatients = patients.length;
   const { userType } = useContext(AuthenticationContext);
   console.log(userType);
-
-  const addPatient = (patient) => {
-    setPatients([...patients, patient]);
-  };
-
-  const scheduleAppointment = (appointment) => {
-    setAppointments([...appointments, appointment]);
-  };
 
   return (
     <Box
